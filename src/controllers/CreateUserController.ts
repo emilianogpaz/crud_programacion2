@@ -16,12 +16,12 @@ class CreateUserController {
         estado
       }).then(() => {
         response.render("message", {
-          message: "Usuário cadastrado com sucesso"
+          message: "Usuario registrado con éxito!"
         });
       });
     } catch (err) {
       response.render("message", {
-        message: `Erro ao cadastrar usuário: ${err.message}`
+        message: `Error al registrar usuario: ${err.message}`
       });
     }
 

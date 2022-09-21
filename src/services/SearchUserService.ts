@@ -4,7 +4,7 @@ import { UsersRepository } from "../repositories/UsersRepository";
 class SearchUserService {
   async search(search: string) {
     if (!search) {
-      throw new Error("Por favor preencha o campo de busca");
+      throw new Error("Por favor rellena el campo de búsqueda");
     }
 
     const usersRepository = getCustomRepository(UsersRepository);

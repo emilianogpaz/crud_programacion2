@@ -10,12 +10,12 @@ class UpdateUserController {
     try {
       await updateUserService.update({ id, username, email, telefone, cidade, estado }).then(() => {
         response.render("message", {
-          message: "Usuário atualizado com sucesso"
+          message: "Usuario actualizado con éxito"
         });
       });
     } catch (err) {
       response.render("message", {
-        message: `Erro ao atualizar usuário: ${err.message}`
+        message: `Error al actualizar el usuario: ${err.message}`
       });
     }
 
